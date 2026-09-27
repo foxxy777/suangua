@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三硬币六爻排盘 ☯</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☯</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>☯ 三硬币六爻排盘</h1>
+  <div class="sub">京房纳甲装卦 · 文王卦序图鉴 · 纯前端零依赖</div>
+</header>
+<nav id="tabs">
+  <button class="tab active" data-tab="paipan">排盘</button>
+  <button class="tab" data-tab="tujian">卦图鉴</button>
+</nav>
+
+<main>
+  <section id="tab-paipan">
+    <div class="legend">
+      硬币约定：<b>正</b>＝字面（阴）　<b>反</b>＝花/国徽面（阳）。<br>
+      从下往上填：<b>第一行是初爻，最后一行是上爻</b>。每摇一次三枚硬币，按下到的结果点一行。
+    </div>
+    <div id="coinRows"></div>
+    <div class="center"><button id="goCast" class="primary" disabled>排 盘</button></div>
+    <div id="castResult"></div>
+  </section>
+
+  <section id="tab-tujian" hidden>
+    <input id="tjSearch" type="text" placeholder="搜卦名，如：乾 / 姤 / 既济">
+    <div id="tjGrid" class="grid"></div>
+    <div id="tjDetail"></div>
+  </section>
+</main>
+
+<footer>纯前端本地运行 · 不上传任何数据 · MIT License</footer>
+<script src="app.js"></script>
+</body>
+</html>
